@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <!-- <link rel="stylesheet" href="boxicons/css/boxicons.css"> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+</head>
+<body>
+    <div class = "box">
+        <div class="container">
+            <div class="top-header">
+               <!-- <span>Have an account? </span> -->
+                <header>دار الهنا و هنادي للايتام</header>
+            </div>
+            <form action="/users/" id="signupform" method="post">
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="First Name" id="first" name="first" required>
+                    <iconify-icon icon="bx:user"></iconify-icon>
+                
+                  </div>
+                  <div class="input-field">
+                    <input type="text" class="input" placeholder="Last Name" id="last" name="last" required>
+                    <iconify-icon icon="bx:user"></iconify-icon>
+                
+                  </div>
+
+
+
+
+
+              <div class="input-field">
+                <input type="email" class="input" placeholder="Email address" id="emailInput" name="email" required>
+                <iconify-icon icon="bx:user"></iconify-icon>
+            
+              </div>
+              <div class="input-field">
+                <input type="password" class="input" placeholder="Password" id="passwordInput" name="password" required>
+                <iconify-icon icon="bx:lock-alt"></iconify-icon>
+
+              </div>
+              <div class="input-field">
+                <input type="password" class="input" placeholder="Confirm Password" id="confirmPasswordInput" name="confirmPassword" required>
+                <iconify-icon icon="bx:lock-alt"></iconify-icon>
+
+              </div>
+          
+
+              <div class="input-field">
+                <!-- <input type="submit" class="submit" value="Login"> -->
+                
+                <button class="submit" id="submitButton">Sign Up</button>
+              
+              </div>
+              <h2 id="err1">
+                <label id="error"></label>
+            </h2>
+            <h3 id="err2">
+                <label id="error"></label>
+            </h3>
+            <h4 id="err3">
+                <label id="error"></label>
+            </h4>
+            </form>
+            <!-- <button id="btn"></button> -->
+        </div>
+    </div>
+  <script src="/scripts/myscript.js"></script>
+</body>
+</html>

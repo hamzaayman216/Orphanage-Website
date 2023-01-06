@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --themeRed:#e43a47;
+    --gray: #efefef;
+
+}
+
+.button{
+    border: 1px solid var(--themeRed);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15 px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: red;
+}
+
+.button:hover{
+   background-color: var(--themeRed);
+   color: white;
+}

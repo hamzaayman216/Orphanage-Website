@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+    <link rel="stylesheet" href="/styles/moneydon.css" >
+</head>
+
+
+    <body>
+
+        <div id ="container">
+
+            <section class = "header">
+          
+              <nav> 
+          
+              <h1 style="color:white;"> دار الهنا وهنادى للأيتام والمعاقين والمسنين</h1>
+              
+              <div class = "nav-links">
+              <ul>
+          
+                <li><a href="/adminhome/index">Home</a> </li>
+                <li><a href="/addon">Donations</a> </li>
+                <li><a href="/addevent">Events</a> </li>
+                <li><a href="/addjob">Job Opportunities</a> </li>
+              </ul>
+          
+              </nav>
+            
+           
+          
+           
+             
+         
+        <body>
+      
+            <section class="programs" id="programsSection">
+                <div class="container">
+                    <h2 class="sectionTitle">Job Opportunities</h2>
+                    <div class="boxContainer">
+    
+                        <% for(let job of addjob) { %>
+    
+                        <div class="box">
+                           
+                            <div class="programTitle"><%= job.jobName %> </div>
+                            <div class="donationCount">
+                                Description: <%= job.jobDescription %> <div><span>Qualifications: <%= job.qualifications %></span></div>
+                            </div>
+                          <div class="donationCount">Number of applicants: <%= (job.users).length %> </div> 
+                        <% for( let y of job.users) { %>
+                        
+                        
+                            <% for( let x of user ) { %>
+
+                                  <% if (x.id==y) { %>
+                                <div class="donationCount"><%= x.email  %> </div>   
+                                  <% } %> 
+                            
+                            <% } %>
+<% } %>
+                        </div>
+                        <% } %> 
+        
+                    </div>
+                </div>
+            </section>
+        
+            <div class="boxContainer">
+                <form action="/addjob" id="addEventForm" method="post"> 
+
+
+                    <p>
+                        <label id="en" for="jobName">Job Name</label>
+                        <input type="text" name="jobName" id="jobName" placeholder="Job Name" required >
+                    
+                       </p>
+                       <p>
+                        <label id="ed" for="jobDescription">Job Description</label>
+                        <textarea id="jobDescription" name="jobDescription" rows="4" cols="50" placeholder="Job Description" required>
+                           
+                            </textarea>
+                    
+                       </p>
+                       <p>
+                        <label id="edd" for="qualifications">Qualifications</label>
+                        <textarea id="qualifications" name="qualifications" rows="4" cols="50" placeholder="Qualifications" required>
+                           
+                        </textarea>    </p>
+                    
+                    <p>
+                        <button id="addEvent" class="button">Add Job</button>
+                    </p>
+
+
+                </form>
+
+
+
+
+            </div>
+        
+        
+        </body>
+
+
+
+
+
+
+  
+
+
+
+
+   
+
+
+
+
+
+<script src="/scripts/eventscript.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+  <link href="/styles/donationform.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  
+</head>
+
+<body>
+
+  <div id ="container">
+
+  <section class = "header">
+
+    <nav> 
+
+    <h1 style="color:white;"> دار الهنا وهنادى للأيتام والمعاقين والمسنين</h1>
+    
+    <div class = "nav-links">
+    <ul>
+
+      <li><a href="/home/index">Home</a> </li>
+      <li><a href="/aboutus/index">About Us</a> </li>
+      <li><a href="/donations/index">Donations</a> </li>
+      <li><a href="/events">Events</a> </li>
+      <li><a href="/jobopp/index">Job Opportunities</a> </li>
+      <li><a href="/visits/index">Visits</a> </li>
+    </ul>
+
+    </nav>
+  
+    <body>
+        <div class="wrapper">
+            <h2>Donation Form</h2>
+            <form action="/donform/index" method="post"  id="donnform"  >
+                <!--Account Information start-->
+                <h4>Account</h4>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input name="fullName" type="text" id="FName" placeholder="Full Name" required
+                        class="name" onkeyup="validateFName()">
+                        <span id="msgFN" style="color:red"></span>
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input name="nationalId" type="text" maxlength="14" id="NatID" onkeyup="validateNID()" placeholder="National ID" required
+                        class="name">
+                        <span id="msgN" style="color:red"></span>
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                </div>
+                <!--account information end -->
+    
+                <!--DOD start-->
+                <div class="input_group">
+                    <div class="input_box">
+                        <h4>Confirm Date of Donation</h4>
+                        <!--<input type="text" placeholder="DD" id="DonDay" required
+                        class="dod"> -->
+                        <input name="donationDate" type="month" id="DOND" required
+                        class="dod">
+                        <!-- <input type="text" placeholder="YYYY" id="DonYear" required
+                        class="dod"> -->
+                    </div>
+                </div>    
+                <!--Don Method-->
+                <div class="input_group">
+                    <div class="input_box">
+                        <input name="amount" type="number" class="name" id="AmountE"  onkeyup="validateAmount()" placeholder="Enter Amount" required>
+                        <span id="Amsg" style="color:red"></span>
+                        <i class="fa fa-money icon"></i>
+                    </div>
+                </div>
+    
+    
+    
+    
+                <!--Don Method-->
+                <!--DOD End-->
+                <!--Donation Details Start-->
+                <div class="input_group">
+                    <div class="input_box">
+                        <h4>Choose your donation method</h4>
+                        <input type="radio" name="visa" value="visa" class="radio"
+                        id="bc1" onclick="ShowhideCredit()" checked>
+                        <span id="CreditError" style="color:red"></span> 
+                        <label for="bc1"><span style="color: black;">
+                            <i class="fa fa-cc-visa" style="color: black;"></i>Credit Card
+                        </span></label>      
+                        <input type="radio" name="pay"  value="fawry" class="radio"
+                        id="bc2" onclick="ShowhidePay()" >
+                        <span id="FawryError" style="color:red"> </span>
+                        <label for="bc2"><span style="color: black;">
+                            <i class="fa fa-cc-paypal" style="color:black;"></i>FawryPay
+                        </span></label>
+                    </div>
+                </div>
+                <fieldset class="input_group" id="VisaSection">
+                    <legend><h4> Card Info </h4></legend>
+                    <div class="input_box">
+                        <input type="text" class="name" maxlength="14" id="CreditC" placeholder="Card Number 1111-2222-3333-4444" ><br>
+                        <span id="msgCC" style="color:red"></span>
+                        <i class="fa fa-credit-card icon"></i>
+                    </div>
+                </fieldset>
+                <fieldset class="input_group" id="CVsection">
+                    <legend><h4>CVV Info</h4></legend>
+                    <div class="input_box">
+                        <input type="text" class="name" id="CVV"  maxlength="4"  placeholder="Card CVC 632" ><br>
+                        <span id="msg" style="color:red"></span>
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="flexbox" id="ExpDate">
+                    <legend><h4>Exp Date</h4></legend>
+                    <div class="input_box">
+                        <span id="expmm" style="padding-bottom: 5px; color: black;" >Expiration month</span>
+                        <select name="" id="EMV" style="color: black;" class="month-input" >
+                            <option value="month" selected disabled>month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <span id="expmm" style="padding-bottom: 5px;color: black;">Expiration year</span>
+                        <select name="" style="color: black;" id="EYV" class="year-input" >
+                            <option value="year" selected disabled>year</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="input_group">
+                    <div class="input_box">
+                        <button class="submit" type="submit" id="donatenow" >Donate Now </button>
+                        <!-- <span id="SubmitError" style="color:red">please re-enter required fields</span> -->
+                    </div>
+                </div>
+    
+                <!--Payment details end-->
+            </form>
+        </div>
+      <script src="/scripts/donationform.js"></script>      
+    </body>
+
+
+ 
+  <!-----footer---->
+
+
+
+</body>
+
+</html>

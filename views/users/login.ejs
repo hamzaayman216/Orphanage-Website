@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <!-- <link rel="stylesheet" href="boxicons/css/boxicons.css"> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+  </head>
+<body>
+    <div class = "box">
+        <div class="container">
+            <div class="top-header">
+               <!-- <span>Have an account? </span> -->
+                <header>دار الهنا و هنادي للايتام</header>
+            </div>
+            <form action="/users/login" method="post">
+
+
+              <div class="input-field">
+                <input type="email" class="input" placeholder="Email address" id="emailInput" name="email" required>
+                <iconify-icon icon="bx:user"></iconify-icon>
+            
+              </div>
+              <div class="input-field">
+                <input type="password" class="input" placeholder="Password" id="passwordInput" name="password" required>
+                <iconify-icon icon="bx:lock-alt"></iconify-icon>
+
+              </div>
+              <div class="input-field">
+                <!-- <input type="submit" class="submit" value="Login"> -->
+                
+                <button class="submit" id="submitButton">Login</button>
+              
+              </div>
+
+              <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check"> Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot password</a> </label>
+                </div>
+              </div>
+              <div class="signup-link">
+                Not a member? <label><a href="/users/signup">Sign Up</a> </label>
+              </div>
+            </form>
+            <!-- <button id="btn"></button> -->
+        </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>

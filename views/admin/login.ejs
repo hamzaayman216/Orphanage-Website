@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <!-- <link rel="stylesheet" href="boxicons/css/boxicons.css"> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+  </head>
+<body>
+    <div class = "box">
+        <div class="container">
+            <div class="top-header">
+               <!-- <span>Have an account? </span> -->
+                <header>دار الهنا و هنادي للايتام</header>
+                <header>Admin</header>
+            </div>
+            <form action="/admin/login" method="post">
+
+
+              <div class="input-field">
+                <input type="adminEmail" class="input" placeholder="Email address" id="emailInput" name="adminEmail" required>
+                <iconify-icon icon="bx:user"></iconify-icon>
+            
+              </div>
+              <div class="input-field">
+                <input type="password" class="input" placeholder="Password" id="passwordInput" name="adminPassword" required>
+                <iconify-icon icon="bx:lock-alt"></iconify-icon>
+
+              </div>
+              <div class="input-field">
+                <!-- <input type="submit" class="submit" value="Login"> -->
+                
+                <button class="submit" id="submitButton">Login</button>
+              
+              </div>
+
+              <div class="bottom">
+
+            </form>
+            <!-- <button id="btn"></button> -->
+        </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>

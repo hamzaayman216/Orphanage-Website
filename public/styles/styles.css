@@ -1,0 +1,121 @@
+*{
+    background-color: orange;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: rgb(216, 141, 1);
+   display: grid;
+   margin: auto;
+   font-size: 20px;
+   border-width: 1px;
+   border-radius: 10px;
+   margin-top: 20px;
+
+}
+button{
+    font-size: 20px;
+    display: grid;
+   margin: auto;
+   border-width: 1px;
+   border-radius: 10px;
+   margin-top: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: auto;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+h2{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: auto;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: red;
+  background-color: aliceblue;
+}
+h3{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: auto;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: red;
+  background-color: aliceblue;
+}
+h4{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: auto;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: red;
+  background-color: aliceblue;
+}
+form{
+
+    border-width:2px ;
+    border-color: rgb(192, 173, 173);
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: auto;
+    display: table;
+    background-color: aliceblue;
+
+    
+}
+label{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+ 
+
+  input[type=email] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+  input[type=password] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+  input[type=date] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+  }
+  p{
+    background-color: aliceblue;
+
+  }
+
+
+  

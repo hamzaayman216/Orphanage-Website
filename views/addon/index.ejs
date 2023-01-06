@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+  <link href="/styles/moneydon.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/all.css">
+  
+</head>
+
+
+
+<div id ="container">
+
+    <section class = "header">
+  
+      <nav> 
+  
+      <h1 style="color:white;"> دار الهنا وهنادى للأيتام والمعاقين والمسنين</h1>
+      
+      <div class = "nav-links">
+      <ul>
+  
+        <li><a href="/adminhome/index">Home</a> </li>
+        <li><a href="/addon">Donations</a> </li>
+        <li><a href="/addevent">Events</a> </li>
+        <li><a href="/addjob">Job Opportunities</a> </li>
+      </ul>
+  
+      </nav>
+    <body>
+      
+        <section class="programs" id="programsSection">
+            <div class="container">
+                <h2 class="sectionTitle">Donations</h2>
+                <div class="boxContainer">
+
+                    <% for(let donn of don) { %>
+                        
+
+                    <div class="box">
+                       
+                        <div class="programTitle">Customer Name: <%= donn.fullName %> </div>
+                        <div class="programTitle">Customer National ID: <%= donn.nationalId %> </div>
+                        <div class="donationCount">
+                         Amount: <%= donn.amount %> <div><span><%= donn.donationDate %></span></div>
+                        </div>
+
+                        
+                       
+
+                    </div>
+                    <% } %> 
+    
+                </div>
+             </section>
+
+            </div>
+       
+    
+    
+    
+    
+    </body>
+
+
+ 
+
+ 
+  
+</body>
+
+</html>

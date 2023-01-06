@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>دار الهنا وهنادى للأيتام والمعاقين والمسنين</title>
+  <link href="/styles/moneydon.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/all.css">
+  
+</head>
+
+
+
+<div id ="container">
+
+    <section class = "header">
+  
+      <nav> 
+  
+      <h1 style="color:white;"> دار الهنا وهنادى للأيتام والمعاقين والمسنين</h1>
+      
+      <div class = "nav-links">
+      <ul>
+  
+        <li><a href="/adminhome/index">Home</a> </li>
+        <li><a href="/addon">Donations</a> </li>
+        <li><a href="/addevent">Events</a> </li>
+        <li><a href="/addjob">Job Opportunities</a> </li>
+      </ul>
+  
+      </nav>
+    <body>
+      
+        <section class="programs" id="programsSection">
+            <div class="container">
+                <h2 class="sectionTitle">Events</h2>
+                <div class="boxContainer">
+
+                    <% for(let event of addevent) { %>
+                        
+
+                    <div class="box">
+                       
+                        <div class="programTitle"><%= event.eventName %> </div>
+                        <div class="donationCount">
+                            Description: <%= event.eventDescription %> <div><span><%= event.eventDate %></span></div>
+                        </div>
+                        <div class="donationCount">Number of Applicants: <%= (event.myusers).length %> </div>
+                        <% for( let y of event.myusers) { %>
+                        
+                        
+                            <% for( let x of user ) { %>
+
+                                  <% if (x.id==y) { %>
+                                <div class="donationCount"><%= x.email  %> </div>   
+                                  <% } %> 
+                            
+                            <% } %>
+<% } %>
+                    </div>
+                    <% } %> 
+    
+                </div>
+             </section>
+                <div class="boxContainer">
+                    <form action="/addevent" id="addEventForm" method="post"> 
+
+
+                        <p>
+                            <label id="en" for="eventName">Event Name</label>
+                            <input type="text" name="eventName" id="eventName" placeholder="Event Name" required >
+                        
+                           </p>
+                           <p>
+                            <label id="ed" for="eventDescription">Event Description</label>
+                            <textarea id="eventDescription" name="eventDescription" rows="4" cols="50" placeholder="Event Description" required>
+                               
+                            </textarea>    
+                           </p>
+                           <p>
+                            <label id="edd" for="eventDate">Event Date</label>
+                            <input type="date" name="eventDate" id="eventDate" required min="2022-01-01">
+                        </p>
+                        <p>
+                            <button id="addEvent" class="button">Add Event</button>
+                        </p>
+
+
+                    </form>
+
+
+
+
+                </div>
+            </div>
+       
+    
+    
+    
+    
+    </body>
+
+
+ 
+
+ 
+  
+</body>
+
+</html>

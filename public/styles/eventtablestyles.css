@@ -1,0 +1,583 @@
+Agile Homepage.css
+*{
+
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+
+  height: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/pictures/header-background.jpg);
+
+}
+
+#container {
+
+  min-height: 100%;
+   
+}
+
+#footer {
+
+  position: relative;
+  margin-top: auto;
+  clear: both;
+
+}
+
+.header {
+
+  width: 100%;
+  min-height: 100px;
+  padding: 2% 0;
+  background-size: cover;
+  position: relative;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
+
+}
+
+.nav-links {
+
+  flex: 1;
+  text-align: right;
+
+}
+
+.nav-links ul li {
+
+  display: inline-block;
+  list-style: none;
+  padding: 8px 18px;
+  position: relative;
+}
+
+.nav-links ul li a {
+
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font: arial;
+}
+
+.nav-links ul li::after {
+
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+
+  width: 100%;
+
+}
+
+.text-box {
+
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.text-box h1 {
+
+  font-size: 62px;
+}
+
+.text-box p {
+
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff
+}
+
+.activities {
+
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+h1{
+
+  font-size: 36px;
+  font-weight: 14px;
+
+}
+
+.row{
+
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.column {
+
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+
+}
+
+.image{
+
+  width: 300px;
+  height: 180px;
+  margin-bottom: 5% ;
+
+}
+
+.column p {
+
+  margin-top: 5%; 
+  color: black; 
+  font-size: 16px; 
+
+
+}
+
+.column h3 a {
+
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  font: arial;
+  margin-bottom: 50%;
+  
+
+}
+
+.facts {
+
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 15%;
+  
+  
+}
+
+.column-facts p {
+
+  margin-top: 5%; 
+  color: black;
+  font-size: 15px;
+
+}
+
+
+
+.row-facts{
+
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.column-facts {
+
+  flex-basis: 40%;
+  background: #ededed;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 100px 12px;
+  box-sizing: border-box;
+
+}
+
+.footer {
+
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #d9d9d9;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+.content1 {
+    position: relative;
+    margin: 120px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content1 .text {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgb(255, 249, 249)
+}
+
+.content1 .p {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: rrgb(21, 21, 21);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(21, 21, 21);
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h4 {
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: rgb(52, 51, 51);
+}
+
+.box .content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #ffa047f2;
+    top: -10px;
+}
+
+.left .content p {
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 30px;
+    width: 30px;
+    background: rgb(57, 56, 56);
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #ffa047f2;
+}
+
+.center .content .fas {
+    font-size: 12px;
+    background: #1a1a1a;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #ffa047f2;
+}
+
+.center .content .text {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 12px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 12px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: #ff7b00;
+}
+
+.right form input {
+    height: 25px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ff7b00;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.right form .btn button:hover {
+    background: #000;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 10px;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box {
+        margin: 5px 0;
+    }
+}
+
+
+img{
+    margin-left: 100px;
+}
+label{
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+  }
+ 
+  input[type=date] {
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-family:'Poppins', sans-serif;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+
+
+span[id="eventspan"]{
+
+    background-color: white;
+    display: inline-table;
+    border-width:2px ;
+    border-color: rgb(192, 173, 173);
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 550px;
+
+}
+
+button[id="applybtn"]{
+    font-size: 20px;
+    display: grid;
+   padding: auto;
+   border-width: 1px;
+   border-radius: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   color: black;
+
+}
+
+
+button[id="applybtn"]:hover{
+    background-color: white;
+    color: rgb(216, 141, 1);
+   display: grid;
+ 
+   font-size: 20px;
+   border-width: 1px;
+   border-radius: 10px;
+   
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+h5{
+   color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+
+}
+
+h6{
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+
+h7{
+   font-size: 15;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+form[id="addEventForm"]{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+}
+
+
+button[id="addEvent"]{
+
+    font-size: 20px;
+    display: grid;
+   padding: auto;
+   border-width: 1px;
+   border-radius: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   color: black;
+
+
+}
+button[id="addEvent"]:hover{
+    background-color: white;
+    color: rgb(216, 141, 1);
+   display: grid;
+ 
+   font-size: 20px;
+   border-width: 1px;
+   border-radius: 10px;
+   
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+textarea{
+  border: 2px solid red;
+  font-size: 15px;
+  font-family:'Poppins', sans-serif;
+  margin-bottom: 20px;
+  background-color: white;
+  color: black;
+}
